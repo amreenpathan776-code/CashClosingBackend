@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const sql = require("mssql");
 const ExcelJS = require("exceljs");
-const cron = require("node-cron");
+
 const app = express();
 
 const fs = require("fs");
@@ -1514,6 +1514,217 @@ console.warn({
 
       const emp =
         empResult.recordset[0];
+		
+		// ======================
+// MOVE PREVIOUS DAY
+// TO HISTORY
+// ======================
+
+const oldRecordResult =
+  await pool.request()
+
+    .input(
+      "EmpNo",
+      sql.Int,
+      Number(empNo)
+    )
+
+    .query(`
+
+      SELECT TOP 1 *
+
+      FROM daily_cash_closing
+
+      WHERE
+        [Emp No.] = @EmpNo
+
+        AND EntryDate <
+          CAST(GETDATE() AS DATE)
+
+      ORDER BY EntryDate DESC
+
+    `);
+
+if (
+  oldRecordResult.recordset.length > 0
+) {
+
+  const oldRecord =
+    oldRecordResult.recordset[0];
+
+  console.log({
+
+    api:
+      "/save-cash-closing",
+
+    event:
+      "PREVIOUS_DAY_RECORD_FOUND",
+
+    empNo,
+
+    oldDate:
+      oldRecord.EntryDate,
+
+    amount:
+      oldRecord.ClosingAmount,
+
+    timestamp:
+      new Date()
+        .toISOString(),
+
+  });
+
+  // ======================
+  // INSERT INTO HISTORY
+  // ======================
+
+  await pool.request()
+
+    .input(
+      "EntryId",
+      sql.Int,
+      oldRecord.EntryId
+    )
+
+    .input(
+      "EmpNo",
+      sql.Int,
+      oldRecord["Emp No."]
+    )
+
+    .input(
+      "EmployeeName",
+      sql.VarChar(200),
+      oldRecord.EmployeeName
+    )
+
+    .input(
+      "BrCode",
+      sql.VarChar(20),
+      oldRecord.BrCode
+    )
+
+    .input(
+      "BranchName",
+      sql.VarChar(200),
+      oldRecord.BranchName
+    )
+
+    .input(
+      "Designation",
+      sql.VarChar(200),
+      oldRecord.Designation
+    )
+
+    .input(
+      "ClosingAmount",
+      sql.Decimal(18,2),
+      oldRecord.ClosingAmount
+    )
+
+    .input(
+      "VersionNo",
+      sql.Int,
+      oldRecord.VersionNo || 1
+    )
+
+    .input(
+      "EntryDate",
+      sql.Date,
+      oldRecord.EntryDate
+    )
+
+    .query(`
+
+      INSERT INTO daily_cash_closing_history
+      (
+        EntryId,
+        [Emp No.],
+        EmployeeName,
+        BrCode,
+        BranchName,
+        Designation,
+        ClosingAmount,
+        EntryDate,
+        ActionType,
+        VersionNo,
+        ActionBy
+      )
+
+      VALUES
+      (
+        @EntryId,
+        @EmpNo,
+        @EmployeeName,
+        @BrCode,
+        @BranchName,
+        @Designation,
+        @ClosingAmount,
+        @EntryDate,
+        'PreviousDay',
+        @VersionNo,
+        'SYSTEM'
+      )
+
+    `);
+
+  console.log({
+
+    api:
+      "/save-cash-closing",
+
+    event:
+      "PREVIOUS_DAY_MOVED_TO_HISTORY",
+
+    empNo,
+
+    timestamp:
+      new Date()
+        .toISOString(),
+
+  });
+
+  // ======================
+  // DELETE OLD RECORD
+  // ======================
+
+  await pool.request()
+
+    .input(
+      "EmpNo",
+      sql.Int,
+      Number(empNo)
+    )
+
+    .query(`
+
+      DELETE FROM daily_cash_closing
+
+      WHERE
+        [Emp No.] = @EmpNo
+
+        AND EntryDate <
+          CAST(GETDATE() AS DATE)
+
+    `);
+
+  console.log({
+
+    api:
+      "/save-cash-closing",
+
+    event:
+      "PREVIOUS_DAY_DELETED",
+
+    empNo,
+
+    timestamp:
+      new Date()
+        .toISOString(),
+
+  });
+
+}
 		
 		
       // ======================
@@ -3170,7 +3381,7 @@ FROM employees_master
 
 WHERE [Branch Name] IS NOT NULL
 
-AND LTRIM(RTRIM([Branch Name])) NOT IN ('Corporate Office', 'CO')
+AND LTRIM(RTRIM([Branch Name])) NOT IN ('Corporate Office', 'CO', 'Nidadavolu')
 
 ORDER BY branchName
 
@@ -3702,173 +3913,7 @@ worksheet.getRow(totalRowNumber).alignment = {
 
 });
 
-// ======================
-// DAILY CLEANUP JOB
-// ======================
 
-cron.schedule(
-  "5 0 * * *",
-  async () => {
-
-    try {
-
-      console.log(
-        "RUNNING PREVIOUS DAY CLEANUP..."
-      );
-
-      const pool =
-        await poolPromise;
-
-      // ======================
-      // GET OLD RECORDS
-      // ======================
-
-      const oldRecords =
-        await pool.request()
-
-          .query(`
-
-            SELECT *
-
-            FROM daily_cash_closing
-
-            WHERE EntryDate <
-              CAST(GETDATE() AS DATE)
-
-          `);
-
-      for (const row of oldRecords.recordset) {
-
-        // ======================
-        // INSERT INTO HISTORY
-        // ======================
-
-        await pool.request()
-
-          .input(
-            "EntryId",
-            sql.Int,
-            row.EntryId
-          )
-
-          .input(
-            "EmpNo",
-            sql.Int,
-            row["Emp No."]
-          )
-
-          .input(
-            "EmployeeName",
-            sql.VarChar(200),
-            row.EmployeeName
-          )
-
-          .input(
-            "BrCode",
-            sql.VarChar(20),
-            row.BrCode
-          )
-
-          .input(
-            "BranchName",
-            sql.VarChar(200),
-            row.BranchName
-          )
-
-          .input(
-            "Designation",
-            sql.VarChar(200),
-            row.Designation
-          )
-
-          .input(
-            "ClosingAmount",
-            sql.Decimal(18,2),
-            row.ClosingAmount
-          )
-
-          .input(
-            "VersionNo",
-            sql.Int,
-            row.VersionNo
-          )
-
-          .input(
-            "EntryDate",
-            sql.Date,
-            row.EntryDate
-          )
-
-          .query(`
-
-            INSERT INTO
-            daily_cash_closing_history
-            (
-              EntryId,
-              [Emp No.],
-              EmployeeName,
-              BrCode,
-              BranchName,
-              Designation,
-              ClosingAmount,
-              EntryDate,
-              ActionType,
-              VersionNo,
-              ActionBy
-            )
-
-            VALUES
-            (
-              @EntryId,
-              @EmpNo,
-              @EmployeeName,
-              @BrCode,
-              @BranchName,
-              @Designation,
-              @ClosingAmount,
-              @EntryDate,
-              'PreviousDay',
-              @VersionNo,
-              'SYSTEM'
-            )
-
-          `);
-
-      }
-
-      // ======================
-      // DELETE OLD RECORDS
-      // ======================
-
-      await pool.request()
-
-        .query(`
-
-          DELETE FROM
-          daily_cash_closing
-
-          WHERE EntryDate <
-            CAST(GETDATE() AS DATE)
-
-        `);
-
-      console.log(
-        "PREVIOUS DAY CLEANUP COMPLETED"
-      );
-
-    }
-
-    catch (err) {
-
-      console.log(
-        "CRON CLEANUP ERROR:",
-        err.message
-      );
-
-    }
-
-  }
-);
 
 // ======================
 // FRONTEND LOG API
