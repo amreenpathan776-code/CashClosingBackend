@@ -1,0 +1,82 @@
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:41.576Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-07-11T16:05:41.576Z"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:46.002Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-07-11T16:05:46.002Z"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:42.506Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-07-11T16:05:42.506Z"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:42.580Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-07-11T16:05:42.580Z"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:41.341Z] [LOG] Running "CashClosingApp"
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:46.003Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-07-11T16:05:46.003Z"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:46.015Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-07-11T16:05:46.015Z"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:46.016Z] [LOG] {
+  "empNo": "",
+  "deviceId": "81b65917c9367902"
+}
+11/7/2026, 9:35:44 pm | [2026-07-11T16:05:46.017Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-07-11T16:05:46.017Z"
+}
+11/7/2026, 9:35:59 pm | [2026-07-11T16:06:01.776Z] [ERROR] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_FAILED",
+  "error": {
+    "success": false,
+    "message": "Server error"
+  },
+  "timestamp": "2026-07-11T16:06:01.776Z"
+}
+11/7/2026, 9:36:00 pm | [2026-07-11T16:06:01.786Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-07-11T16:06:01.786Z"
+}
+11/7/2026, 9:36:02 pm | [2026-07-11T16:06:04.031Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-07-11T16:06:04.031Z"
+}
+11/7/2026, 9:36:02 pm | [2026-07-11T16:06:04.032Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-07-11T16:06:04.032Z"
+}
+11/7/2026, 9:36:02 pm | [2026-07-11T16:06:04.049Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-07-11T16:06:04.049Z"
+}
+11/7/2026, 9:36:02 pm | [2026-07-11T16:06:04.050Z] [LOG] {
+  "empNo": "",
+  "deviceId": "81b65917c9367902"
+}
+11/7/2026, 9:36:02 pm | [2026-07-11T16:06:04.052Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-07-11T16:06:04.052Z"
+}

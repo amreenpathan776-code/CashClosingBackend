@@ -1,0 +1,11 @@
+23/5/2026, 4:43:52 pm | [2026-05-23T11:13:53.301Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_DASHBOARD_PAGE_LOADED","timestamp":"2026-05-23T11:13:53.300Z"}
+23/5/2026, 4:43:52 pm | [2026-05-23T11:13:53.309Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_INITIAL_FETCH_STARTED","timestamp":"2026-05-23T11:13:53.309Z"}
+23/5/2026, 4:43:52 pm | [2026-05-23T11:13:53.938Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_INITIAL_FETCH_SUCCESS","totalRecords":56,"totalClusters":4,"totalBranches":56,"timestamp":"2026-05-23T11:13:53.938Z"}
+23/5/2026, 4:43:52 pm | [2026-05-23T11:13:53.940Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_DASHBOARD_PAGE_LOADED","timestamp":"2026-05-23T11:13:53.940Z"}
+23/5/2026, 4:44:18 pm | [2026-05-23T11:14:20.050Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_FILTER_CHANGED","field":"fromDate","value":"2026-05-22","timestamp":"2026-05-23T11:14:20.050Z"}
+23/5/2026, 4:44:18 pm | [2026-05-23T11:14:20.051Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_DASHBOARD_PAGE_LOADED","timestamp":"2026-05-23T11:14:20.051Z"}
+23/5/2026, 4:44:22 pm | [2026-05-23T11:14:23.826Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_FILTER_CHANGED","field":"toDate","value":"2026-05-22","timestamp":"2026-05-23T11:14:23.825Z"}
+23/5/2026, 4:44:22 pm | [2026-05-23T11:14:23.827Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_DASHBOARD_PAGE_LOADED","timestamp":"2026-05-23T11:14:23.827Z"}
+23/5/2026, 4:44:23 pm | [2026-05-23T11:14:25.259Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_SEARCH_CLICKED","filters":{"cluster":"","branch":"","fromDate":"2026-05-22","toDate":"2026-05-22","status":""},"timestamp":"2026-05-23T11:14:25.259Z"}
+23/5/2026, 4:44:24 pm | [2026-05-23T11:14:25.547Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_SEARCH_SUCCESS","totalRecords":56,"filters":{"cluster":"","branch":"","fromDate":"2026-05-22","toDate":"2026-05-22","status":""},"timestamp":"2026-05-23T11:14:25.547Z"}
+23/5/2026, 4:44:24 pm | [2026-05-23T11:14:25.549Z] [LOG] {"page":"CashClosingDashboard","event":"CASH_CLOSING_DASHBOARD_PAGE_LOADED","timestamp":"2026-05-23T11:14:25.548Z"}

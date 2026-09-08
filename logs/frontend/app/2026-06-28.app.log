@@ -1,0 +1,6 @@
+28/6/2026, 5:16:14 pm | [2026-06-28T11:46:14.848Z] [LOG] Running "CashClosingApp"
+28/6/2026, 5:16:14 pm | [2026-06-28T11:46:14.955Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-06-28T11:46:14.955Z"
+}

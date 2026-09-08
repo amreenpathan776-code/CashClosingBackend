@@ -1,0 +1,203 @@
+31/5/2026, 11:54:50 am | [2026-05-31T06:24:48.299Z] [LOG] Running "CashClosingApp"
+31/5/2026, 11:54:50 am | [2026-05-31T06:24:48.444Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-31T06:24:48.444Z"
+}
+31/5/2026, 4:25:11 pm | [2026-05-31T10:55:11.077Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-31T10:55:11.077Z"
+}
+31/5/2026, 4:25:11 pm | [2026-05-31T10:55:10.960Z] [LOG] Running "CashClosingApp"
+31/5/2026, 4:25:11 pm | [2026-05-31T10:55:12.022Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-31T10:55:12.022Z"
+}
+31/5/2026, 4:25:11 pm | [2026-05-31T10:55:12.056Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-31T10:55:12.056Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.531Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-31T10:55:16.530Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.529Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-31T10:55:16.529Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.541Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "f2b383b692d384f6",
+  "timestamp": "2026-05-31T10:55:16.541Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.544Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "f2b383b692d384f6",
+  "timestamp": "2026-05-31T10:55:16.544Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.543Z] [LOG] {
+  "empNo": "",
+  "deviceId": "f2b383b692d384f6"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.801Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_SUCCESS",
+  "user": {
+    "empNo": "307",
+    "employeeName": "P.L. Manikanta",
+    "branchCode": "35",
+    "branchName": "Kolluru",
+    "designation": "Branch Manager"
+  },
+  "timestamp": "2026-05-31T10:55:16.801Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.815Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "USER_DATA_SAVED",
+  "timestamp": "2026-05-31T10:55:16.815Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.820Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-05-31T10:55:16.820Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.816Z] [LOG] {
+  "event": "NAVIGATING_TO_USER"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.830Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "SCREEN_OPENED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-31T10:55:16.829Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.830Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOAD_EMPLOYEE_STARTED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-31T10:55:16.830Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.834Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGGED_USER_FETCHED",
+  "hasUser": true,
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-31T10:55:16.834Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.835Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_API_STARTED",
+  "empNo": "307",
+  "timestamp": "2026-05-31T10:55:16.835Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:16.951Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_DATA_LOADED",
+  "empNo": "307",
+  "branch": "Kolluru",
+  "designation": "Branch Manager",
+  "timestamp": "2026-05-31T10:55:16.951Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:17.220Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LAST_SUBMISSION_LOADED",
+  "previousDayAmount": 2490839,
+  "previousDaySubmittedAt": "2026-05-30 17:59:16",
+  "formattedPreviousDayTime": "30/5/2026, 5:59 pm",
+  "empNo": "",
+  "timestamp": "2026-05-31T10:55:17.220Z"
+}
+31/5/2026, 4:25:16 pm | [2026-05-31T10:55:17.310Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOADING_COMPLETED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-31T10:55:17.310Z"
+}
+31/5/2026, 10:59:11 pm | [2026-05-31T17:29:09.925Z] [LOG] Running "CashClosingApp"
+31/5/2026, 10:59:11 pm | [2026-05-31T17:29:10.109Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-31T17:29:10.109Z"
+}
+31/5/2026, 10:59:11 pm | [2026-05-31T17:29:10.947Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-31T17:29:10.947Z"
+}
+31/5/2026, 10:59:11 pm | [2026-05-31T17:29:10.984Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-31T17:29:10.984Z"
+}
+31/5/2026, 10:59:20 pm | [2026-05-31T17:29:20.061Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-31T17:29:20.061Z"
+}
+31/5/2026, 10:59:20 pm | [2026-05-31T17:29:20.072Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-05-31T17:29:20.072Z"
+}
+31/5/2026, 10:59:20 pm | [2026-05-31T17:29:20.070Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-05-31T17:29:20.070Z"
+}
+31/5/2026, 10:59:20 pm | [2026-05-31T17:29:20.059Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-31T17:29:20.059Z"
+}
+31/5/2026, 10:59:20 pm | [2026-05-31T17:29:20.071Z] [LOG] {
+  "empNo": "",
+  "deviceId": "81b65917c9367902"
+}
+31/5/2026, 10:59:36 pm | [2026-05-31T17:29:35.555Z] [ERROR] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_FAILED",
+  "error": {
+    "success": false,
+    "message": "Server error"
+  },
+  "timestamp": "2026-05-31T17:29:35.555Z"
+}
+31/5/2026, 10:59:36 pm | [2026-05-31T17:29:35.564Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-05-31T17:29:35.564Z"
+}
+31/5/2026, 10:59:40 pm | [2026-05-31T17:29:39.796Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-31T17:29:39.796Z"
+}
+31/5/2026, 10:59:40 pm | [2026-05-31T17:29:39.796Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-31T17:29:39.796Z"
+}
+31/5/2026, 10:59:40 pm | [2026-05-31T17:29:39.804Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-05-31T17:29:39.804Z"
+}
+31/5/2026, 10:59:40 pm | [2026-05-31T17:29:39.804Z] [LOG] {
+  "empNo": "",
+  "deviceId": "81b65917c9367902"
+}
+31/5/2026, 10:59:40 pm | [2026-05-31T17:29:39.803Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-05-31T17:29:39.803Z"
+}

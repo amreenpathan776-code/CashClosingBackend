@@ -1,0 +1,374 @@
+23/5/2026, 6:58:49 am | [2026-05-23T01:28:47.712Z] [LOG] Running "CashClosingApp"
+23/5/2026, 6:58:49 am | [2026-05-23T01:28:47.930Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T01:28:47.930Z"
+}
+23/5/2026, 11:21:28 am | [2026-05-23T05:51:28.697Z] [LOG] Running "CashClosingApp"
+23/5/2026, 11:21:28 am | [2026-05-23T05:51:28.886Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T05:51:28.886Z"
+}
+23/5/2026, 11:21:30 am | [2026-05-23T05:51:30.389Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-23T05:51:30.389Z"
+}
+23/5/2026, 11:21:30 am | [2026-05-23T05:51:30.480Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T05:51:30.480Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.008Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-23T05:51:35.008Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.003Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-23T05:51:35.003Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.029Z] [LOG] {
+  "empNo": "",
+  "deviceId": "81b65917c9367902"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.030Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-05-23T05:51:35.030Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.028Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-05-23T05:51:35.028Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.253Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_SUCCESS",
+  "user": {
+    "empNo": "974",
+    "employeeName": "T Sreenivas",
+    "branchCode": "30",
+    "branchName": "Gopalapatnam",
+    "designation": "Branch Manager"
+  },
+  "timestamp": "2026-05-23T05:51:35.252Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.273Z] [LOG] {
+  "event": "NAVIGATING_TO_USER"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.272Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "USER_DATA_SAVED",
+  "timestamp": "2026-05-23T05:51:35.271Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.274Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-05-23T05:51:35.274Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.294Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "SCREEN_OPENED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T05:51:35.294Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.295Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOAD_EMPLOYEE_STARTED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T05:51:35.295Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.313Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGGED_USER_FETCHED",
+  "hasUser": true,
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T05:51:35.313Z"
+}
+23/5/2026, 11:21:34 am | [2026-05-23T05:51:35.314Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_API_STARTED",
+  "empNo": "974",
+  "timestamp": "2026-05-23T05:51:35.314Z"
+}
+23/5/2026, 11:21:35 am | [2026-05-23T05:51:35.460Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_DATA_LOADED",
+  "empNo": "974",
+  "branch": "Gopalapatnam",
+  "designation": "Branch Manager",
+  "timestamp": "2026-05-23T05:51:35.460Z"
+}
+23/5/2026, 11:21:35 am | [2026-05-23T05:51:35.692Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LAST_SUBMISSION_LOADED",
+  "previousDayAmount": 601030,
+  "previousDaySubmittedAt": "2026-05-22 17:56:53",
+  "formattedPreviousDayTime": "22/5/2026, 5:56 pm",
+  "empNo": "",
+  "timestamp": "2026-05-23T05:51:35.692Z"
+}
+23/5/2026, 11:21:35 am | [2026-05-23T05:51:35.792Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOADING_COMPLETED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T05:51:35.792Z"
+}
+23/5/2026, 11:21:41 am | [2026-05-23T05:51:41.974Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T05:51:41.974Z"
+}
+23/5/2026, 11:21:41 am | [2026-05-23T05:51:41.931Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGOUT_CLICKED",
+  "empNo": "974",
+  "timestamp": "2026-05-23T05:51:41.931Z"
+}
+23/5/2026, 11:39:07 am | [2026-05-23T06:09:08.725Z] [LOG] Running "CashClosingApp"
+23/5/2026, 11:39:07 am | [2026-05-23T06:09:08.880Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T06:09:08.880Z"
+}
+23/5/2026, 11:39:12 am | [2026-05-23T06:09:14.205Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T06:09:14.205Z"
+}
+23/5/2026, 11:39:12 am | [2026-05-23T06:09:14.117Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-23T06:09:14.117Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.408Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-23T06:09:18.408Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.407Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-23T06:09:18.406Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.606Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_SUCCESS",
+  "user": {
+    "empNo": "784",
+    "employeeName": "KVVN Dinesh",
+    "branchCode": "19",
+    "branchName": "Devarapalli",
+    "designation": "Branch Manager"
+  },
+  "timestamp": "2026-05-23T06:09:18.605Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.625Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "USER_DATA_SAVED",
+  "timestamp": "2026-05-23T06:09:18.625Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.428Z] [LOG] {
+  "empNo": "",
+  "deviceId": "17bb83ca3721b672"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.429Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "17bb83ca3721b672",
+  "timestamp": "2026-05-23T06:09:18.429Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.426Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "17bb83ca3721b672",
+  "timestamp": "2026-05-23T06:09:18.426Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.628Z] [LOG] {
+  "event": "NAVIGATING_TO_USER"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.630Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-05-23T06:09:18.630Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.665Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOAD_EMPLOYEE_STARTED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T06:09:18.665Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.669Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGGED_USER_FETCHED",
+  "hasUser": true,
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T06:09:18.669Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.661Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "SCREEN_OPENED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T06:09:18.661Z"
+}
+23/5/2026, 11:39:16 am | [2026-05-23T06:09:18.670Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_API_STARTED",
+  "empNo": "784",
+  "timestamp": "2026-05-23T06:09:18.670Z"
+}
+23/5/2026, 11:39:17 am | [2026-05-23T06:09:18.900Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_DATA_LOADED",
+  "empNo": "784",
+  "branch": "Devarapalli",
+  "designation": "Branch Manager",
+  "timestamp": "2026-05-23T06:09:18.900Z"
+}
+23/5/2026, 11:39:17 am | [2026-05-23T06:09:19.110Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LAST_SUBMISSION_LOADED",
+  "previousDayAmount": 1700000,
+  "previousDaySubmittedAt": "2026-05-22 18:10:48",
+  "formattedPreviousDayTime": "22/5/2026, 6:10 pm",
+  "empNo": "",
+  "timestamp": "2026-05-23T06:09:19.110Z"
+}
+23/5/2026, 11:39:17 am | [2026-05-23T06:09:19.226Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOADING_COMPLETED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T06:09:19.225Z"
+}
+23/5/2026, 1:44:30 pm | [2026-05-23T08:14:30.906Z] [LOG] Running "CashClosingApp"
+23/5/2026, 1:44:30 pm | [2026-05-23T08:14:31.125Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T08:14:31.125Z"
+}
+23/5/2026, 3:58:31 pm | [2026-05-23T10:28:32.945Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T10:28:32.945Z"
+}
+23/5/2026, 3:58:31 pm | [2026-05-23T10:28:32.688Z] [LOG] Running "CashClosingApp"
+23/5/2026, 3:58:33 pm | [2026-05-23T10:28:34.990Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-23T10:28:34.990Z"
+}
+23/5/2026, 3:58:33 pm | [2026-05-23T10:28:35.039Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T10:28:35.039Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:38.924Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-23T10:28:38.924Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:38.925Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-23T10:28:38.925Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.144Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_SUCCESS",
+  "user": {
+    "empNo": "121",
+    "employeeName": "B. Chandra Sekhar K",
+    "branchCode": "6",
+    "branchName": "Narasaraopet",
+    "designation": "Branch Manager"
+  },
+  "timestamp": "2026-05-23T10:28:39.144Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.167Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "USER_DATA_SAVED",
+  "timestamp": "2026-05-23T10:28:39.166Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:38.946Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "cc05aabaa078fe2f",
+  "timestamp": "2026-05-23T10:28:38.946Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:38.943Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "cc05aabaa078fe2f",
+  "timestamp": "2026-05-23T10:28:38.943Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:38.945Z] [LOG] {
+  "empNo": "",
+  "deviceId": "cc05aabaa078fe2f"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.169Z] [LOG] {
+  "event": "NAVIGATING_TO_USER"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.170Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-05-23T10:28:39.170Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.197Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "SCREEN_OPENED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T10:28:39.197Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.207Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_API_STARTED",
+  "empNo": "121",
+  "timestamp": "2026-05-23T10:28:39.207Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.199Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOAD_EMPLOYEE_STARTED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T10:28:39.198Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.205Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGGED_USER_FETCHED",
+  "hasUser": true,
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T10:28:39.205Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.414Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_DATA_LOADED",
+  "empNo": "121",
+  "branch": "Narasaraopet",
+  "designation": "Branch Manager",
+  "timestamp": "2026-05-23T10:28:39.413Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.625Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LAST_SUBMISSION_LOADED",
+  "previousDayAmount": 1550925,
+  "previousDaySubmittedAt": "2026-05-22 17:55:02",
+  "formattedPreviousDayTime": "22/5/2026, 5:55 pm",
+  "empNo": "",
+  "timestamp": "2026-05-23T10:28:39.625Z"
+}
+23/5/2026, 3:58:37 pm | [2026-05-23T10:28:39.772Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOADING_COMPLETED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-05-23T10:28:39.772Z"
+}
+23/5/2026, 5:06:24 pm | [2026-05-23T11:36:25.047Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-23T11:36:25.047Z"
+}
+23/5/2026, 5:06:24 pm | [2026-05-23T11:36:24.905Z] [LOG] Running "CashClosingApp"

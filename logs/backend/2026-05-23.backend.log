@@ -1,0 +1,62 @@
+23/5/2026, 11:21:34 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"2580","deviceId":"81b65917c9367902","timestamp":"2026-05-23T05:51:34.690Z"}
+23/5/2026, 11:21:34 am | {"event":"LOGIN_REQUEST","mpin":"2580","deviceId":"81b65917c9367902","timestamp":"2026-05-23T05:51:34.691Z"}
+23/5/2026, 11:21:34 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"2580","timestamp":"2026-05-23T05:51:34.692Z"}
+23/5/2026, 11:21:34 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"974","branch":"Gopalapatnam","designation":"Branch Manager","timestamp":"2026-05-23T05:51:34.725Z"}
+23/5/2026, 11:21:34 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"974","savedDevice":"81b65917c9367902","currentDevice":"81b65917c9367902","timestamp":"2026-05-23T05:51:34.726Z"}
+23/5/2026, 11:21:34 am | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"974","branch":"Gopalapatnam","designation":"Branch Manager","loginTime":"2026-05-23T05:51:34.736Z"}
+23/5/2026, 11:21:34 am | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"974","timestamp":"2026-05-23T05:51:34.980Z"}
+23/5/2026, 11:21:34 am | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"974","timestamp":"2026-05-23T05:51:34.981Z"}
+23/5/2026, 11:21:34 am | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"974","employeeName":"T Sreenivas","branch":"Gopalapatnam","designation":"Branch Manager","timestamp":"2026-05-23T05:51:34.988Z"}
+23/5/2026, 11:21:35 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"974","timestamp":"2026-05-23T05:51:35.064Z"}
+23/5/2026, 11:21:35 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"974","timestamp":"2026-05-23T05:51:35.066Z"}
+23/5/2026, 11:21:35 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"974","amount":601030,"actionAt":"2026-05-22 17:56:53","timestamp":"2026-05-23T05:51:35.105Z"}
+23/5/2026, 11:21:35 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"974","timestamp":"2026-05-23T05:51:35.309Z"}
+23/5/2026, 11:21:35 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"974","timestamp":"2026-05-23T05:51:35.310Z"}
+23/5/2026, 11:21:35 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"974","timestamp":"2026-05-23T05:51:35.316Z"}
+23/5/2026, 11:39:16 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"2222","deviceId":"17bb83ca3721b672","timestamp":"2026-05-23T06:09:16.720Z"}
+23/5/2026, 11:39:16 am | {"event":"LOGIN_REQUEST","mpin":"2222","deviceId":"17bb83ca3721b672","timestamp":"2026-05-23T06:09:16.721Z"}
+23/5/2026, 11:39:16 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"2222","timestamp":"2026-05-23T06:09:16.722Z"}
+23/5/2026, 11:39:16 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"784","branch":"Devarapalli","designation":"Branch Manager","timestamp":"2026-05-23T06:09:16.735Z"}
+23/5/2026, 11:39:16 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"784","savedDevice":"17bb83ca3721b672","currentDevice":"17bb83ca3721b672","timestamp":"2026-05-23T06:09:16.736Z"}
+23/5/2026, 11:39:16 am | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"784","branch":"Devarapalli","designation":"Branch Manager","loginTime":"2026-05-23T06:09:16.743Z"}
+23/5/2026, 11:39:17 am | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"784","timestamp":"2026-05-23T06:09:17.023Z"}
+23/5/2026, 11:39:17 am | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"784","timestamp":"2026-05-23T06:09:17.024Z"}
+23/5/2026, 11:39:17 am | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"784","employeeName":"KVVN Dinesh","branch":"Devarapalli","designation":"Branch Manager","timestamp":"2026-05-23T06:09:17.029Z"}
+23/5/2026, 11:39:17 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"784","timestamp":"2026-05-23T06:09:17.118Z"}
+23/5/2026, 11:39:17 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"784","timestamp":"2026-05-23T06:09:17.119Z"}
+23/5/2026, 11:39:17 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"784","amount":1700000,"actionAt":"2026-05-22 18:10:48","timestamp":"2026-05-23T06:09:17.124Z"}
+23/5/2026, 11:39:17 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"784","timestamp":"2026-05-23T06:09:17.344Z"}
+23/5/2026, 11:39:17 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"784","timestamp":"2026-05-23T06:09:17.345Z"}
+23/5/2026, 11:39:17 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"784","timestamp":"2026-05-23T06:09:17.357Z"}
+23/5/2026, 3:58:37 pm | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"1030","deviceId":"cc05aabaa078fe2f","timestamp":"2026-05-23T10:28:37.147Z"}
+23/5/2026, 3:58:37 pm | {"event":"LOGIN_REQUEST","mpin":"1030","deviceId":"cc05aabaa078fe2f","timestamp":"2026-05-23T10:28:37.148Z"}
+23/5/2026, 3:58:37 pm | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"1030","timestamp":"2026-05-23T10:28:37.149Z"}
+23/5/2026, 3:58:37 pm | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"121","branch":"Narasaraopet","designation":"Branch Manager","timestamp":"2026-05-23T10:28:37.163Z"}
+23/5/2026, 3:58:37 pm | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"121","savedDevice":"cc05aabaa078fe2f","currentDevice":"cc05aabaa078fe2f","timestamp":"2026-05-23T10:28:37.164Z"}
+23/5/2026, 3:58:37 pm | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"121","branch":"Narasaraopet","designation":"Branch Manager","loginTime":"2026-05-23T10:28:37.171Z"}
+23/5/2026, 3:58:37 pm | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"121","timestamp":"2026-05-23T10:28:37.412Z"}
+23/5/2026, 3:58:37 pm | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"121","timestamp":"2026-05-23T10:28:37.413Z"}
+23/5/2026, 3:58:37 pm | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"121","employeeName":"B. Chandra Sekhar K","branch":"Narasaraopet","designation":"Branch Manager","timestamp":"2026-05-23T10:28:37.418Z"}
+23/5/2026, 3:58:37 pm | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"121","timestamp":"2026-05-23T10:28:37.522Z"}
+23/5/2026, 3:58:37 pm | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"121","timestamp":"2026-05-23T10:28:37.523Z"}
+23/5/2026, 3:58:37 pm | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"121","amount":1550925,"actionAt":"2026-05-22 17:55:02","timestamp":"2026-05-23T10:28:37.529Z"}
+23/5/2026, 3:58:37 pm | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"121","timestamp":"2026-05-23T10:28:37.793Z"}
+23/5/2026, 3:58:37 pm | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"121","timestamp":"2026-05-23T10:28:37.794Z"}
+23/5/2026, 3:58:37 pm | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"121","timestamp":"2026-05-23T10:28:37.799Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_API_STARTED","filters":{"cluster":"","branch":"","fromDate":"","toDate":"","status":""},"timestamp":"2026-05-23T11:13:52.324Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_DB_CONNECTED","timestamp":"2026-05-23T11:13:52.325Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_QUERY_STARTED","filters":{"cluster":"","branch":"","fromDate":"","toDate":"","status":""},"timestamp":"2026-05-23T11:13:52.326Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_DATA_FETCHED","totalRecords":56,"timestamp":"2026-05-23T11:13:52.351Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_CLUSTER_FETCHED","totalClusters":4,"timestamp":"2026-05-23T11:13:52.357Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_BRANCH_FETCHED","totalBranches":56,"timestamp":"2026-05-23T11:13:52.364Z"}
+23/5/2026, 4:43:52 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_SUCCESS","totalRecords":56,"filters":{"cluster":"","branch":"","fromDate":"","toDate":"","status":""},"timestamp":"2026-05-23T11:13:52.365Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_API_STARTED","filters":{"cluster":"","branch":"","fromDate":"2026-05-22","toDate":"2026-05-22","status":""},"timestamp":"2026-05-23T11:14:23.966Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_DB_CONNECTED","timestamp":"2026-05-23T11:14:23.967Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_QUERY_STARTED","filters":{"cluster":"","branch":"","fromDate":"2026-05-22","toDate":"2026-05-22","status":""},"timestamp":"2026-05-23T11:14:23.968Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_DATA_FETCHED","totalRecords":56,"timestamp":"2026-05-23T11:14:23.981Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_CLUSTER_FETCHED","totalClusters":4,"timestamp":"2026-05-23T11:14:23.986Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_BRANCH_FETCHED","totalBranches":56,"timestamp":"2026-05-23T11:14:23.991Z"}
+23/5/2026, 4:44:23 pm | {"api":"/api/cash-closing-dashboard","event":"CASH_CLOSING_DASHBOARD_SUCCESS","totalRecords":56,"filters":{"cluster":"","branch":"","fromDate":"2026-05-22","toDate":"2026-05-22","status":""},"timestamp":"2026-05-23T11:14:23.992Z"}
+23/5/2026, 8:46:47 pm | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"","deviceId":"","timestamp":"2026-05-23T15:16:47.548Z"}
+23/5/2026, 8:46:47 pm | {"event":"LOGIN_REQUEST","mpin":"","deviceId":"","timestamp":"2026-05-23T15:16:47.549Z"}
+23/5/2026, 8:46:47 pm | {"api":"/login","event":"LOGIN_VALIDATION_FAILED","mpin":"","deviceId":"","timestamp":"2026-05-23T15:16:47.550Z"}

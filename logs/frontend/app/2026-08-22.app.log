@@ -1,0 +1,181 @@
+22/8/2026, 5:29:07 am | [2026-08-21T23:59:07.543Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-21T23:59:07.543Z"
+}
+22/8/2026, 5:29:07 am | [2026-08-21T23:59:07.329Z] [LOG] Running "CashClosingApp"
+22/8/2026, 5:29:08 am | [2026-08-21T23:59:08.934Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-08-21T23:59:08.934Z"
+}
+22/8/2026, 5:29:08 am | [2026-08-21T23:59:09.020Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-21T23:59:09.020Z"
+}
+22/8/2026, 5:29:12 am | [2026-08-21T23:59:12.653Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-08-21T23:59:12.653Z"
+}
+22/8/2026, 5:29:12 am | [2026-08-21T23:59:12.656Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-08-21T23:59:12.655Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:12.675Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-08-21T23:59:12.675Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.424Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_SUCCESS",
+  "user": {
+    "empNo": "974",
+    "employeeName": "T Sreenivas",
+    "branchCode": "30",
+    "branchName": "Gopalapatnam",
+    "designation": "Branch Manager"
+  },
+  "timestamp": "2026-08-21T23:59:14.424Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.444Z] [LOG] {
+  "event": "NAVIGATING_TO_USER"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.450Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-08-21T23:59:14.450Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.471Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "SCREEN_OPENED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-08-21T23:59:14.471Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.473Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOAD_EMPLOYEE_STARTED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-08-21T23:59:14.473Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:12.676Z] [LOG] {
+  "empNo": "",
+  "deviceId": "81b65917c9367902"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.478Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGGED_USER_FETCHED",
+  "hasUser": true,
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-08-21T23:59:14.478Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.479Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_API_STARTED",
+  "empNo": "974",
+  "timestamp": "2026-08-21T23:59:14.479Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:12.677Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "81b65917c9367902",
+  "timestamp": "2026-08-21T23:59:12.677Z"
+}
+22/8/2026, 5:29:13 am | [2026-08-21T23:59:14.440Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "USER_DATA_SAVED",
+  "timestamp": "2026-08-21T23:59:14.440Z"
+}
+22/8/2026, 5:29:14 am | [2026-08-21T23:59:15.172Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_DATA_LOADED",
+  "empNo": "974",
+  "branch": "Gopalapatnam",
+  "designation": "Branch Manager",
+  "timestamp": "2026-08-21T23:59:15.172Z"
+}
+22/8/2026, 5:29:14 am | [2026-08-21T23:59:15.379Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LAST_SUBMISSION_LOADED",
+  "previousDayAmount": 592329,
+  "previousDaySubmittedAt": "2026-08-21 17:43:08",
+  "formattedPreviousDayTime": "21/8/2026, 5:43 pm",
+  "empNo": "",
+  "timestamp": "2026-08-21T23:59:15.379Z"
+}
+22/8/2026, 5:29:14 am | [2026-08-21T23:59:15.475Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOADING_COMPLETED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-08-21T23:59:15.475Z"
+}
+22/8/2026, 8:06:37 am | [2026-08-22T02:36:37.728Z] [LOG] Running "CashClosingApp"
+22/8/2026, 8:06:37 am | [2026-08-22T02:36:37.886Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-22T02:36:37.886Z"
+}
+22/8/2026, 12:55:47 pm | [2026-08-22T07:25:38.323Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-22T07:25:38.322Z"
+}
+22/8/2026, 12:55:48 pm | [2026-08-22T07:25:37.892Z] [LOG] Running "CashClosingApp"
+22/8/2026, 3:10:59 pm | [2026-08-22T09:41:01.047Z] [LOG] Running "CashClosingApp"
+22/8/2026, 3:10:59 pm | [2026-08-22T09:41:01.113Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-22T09:41:01.113Z"
+}
+22/8/2026, 3:10:59 pm | [2026-08-22T09:41:02.530Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-08-22T09:41:02.530Z"
+}
+22/8/2026, 3:10:59 pm | [2026-08-22T09:41:02.556Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-22T09:41:02.556Z"
+}
+22/8/2026, 3:11:04 pm | [2026-08-22T09:41:07.285Z] [LOG] {
+  "screen": "RegisterScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-08-22T09:41:07.285Z"
+}
+22/8/2026, 3:11:38 pm | [2026-08-22T09:41:40.716Z] [LOG] {
+  "screen": "RegisterScreen",
+  "event": "REGISTER_BUTTON_CLICKED",
+  "empNo": "00563",
+  "timestamp": "2026-08-22T09:41:40.716Z"
+}
+22/8/2026, 3:11:38 pm | [2026-08-22T09:41:40.722Z] [LOG] {
+  "screen": "RegisterScreen",
+  "event": "REGISTER_API_STARTED",
+  "empNo": "00563",
+  "deviceId": "b033b989959e4569",
+  "timestamp": "2026-08-22T09:41:40.722Z"
+}
+22/8/2026, 3:11:38 pm | [2026-08-22T09:41:40.716Z] [LOG] {
+  "screen": "RegisterScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-08-22T09:41:40.716Z"
+}
+22/8/2026, 3:11:38 pm | [2026-08-22T09:41:41.007Z] [ERROR] {
+  "screen": "RegisterScreen",
+  "event": "REGISTER_FAILED",
+  "empNo": "00563",
+  "error": {
+    "success": false,
+    "message": "You are CSH from Machilipatnam branch.\n\nOnly Branch Managers are allowed to register from a branch."
+  },
+  "timestamp": "2026-08-22T09:41:41.007Z"
+}
+22/8/2026, 3:11:38 pm | [2026-08-22T09:41:41.009Z] [LOG] {
+  "screen": "RegisterScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-08-22T09:41:41.009Z"
+}

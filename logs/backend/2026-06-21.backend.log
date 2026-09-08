@@ -1,0 +1,15 @@
+21/6/2026, 11:35:32 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"2702","deviceId":"a961a83bef4c962e","timestamp":"2026-06-21T06:05:32.282Z"}
+21/6/2026, 11:35:32 am | {"event":"LOGIN_REQUEST","mpin":"2702","deviceId":"a961a83bef4c962e","timestamp":"2026-06-21T06:05:32.284Z"}
+21/6/2026, 11:35:32 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"2702","timestamp":"2026-06-21T06:05:32.285Z"}
+21/6/2026, 11:35:32 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"601","branch":"Tuni","designation":"Branch Manager","timestamp":"2026-06-21T06:05:32.526Z"}
+21/6/2026, 11:35:32 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"601","savedDevice":"a961a83bef4c962e","currentDevice":"a961a83bef4c962e","timestamp":"2026-06-21T06:05:32.527Z"}
+21/6/2026, 11:35:32 am | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"601","branch":"Tuni","designation":"Branch Manager","loginTime":"2026-06-21T06:05:32.538Z"}
+21/6/2026, 11:35:32 am | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"601","timestamp":"2026-06-21T06:05:32.777Z"}
+21/6/2026, 11:35:32 am | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"601","timestamp":"2026-06-21T06:05:32.778Z"}
+21/6/2026, 11:35:32 am | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"601","employeeName":"G Divya Raju","branch":"Tuni","designation":"Branch Manager","timestamp":"2026-06-21T06:05:32.785Z"}
+21/6/2026, 11:35:32 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"601","timestamp":"2026-06-21T06:05:32.876Z"}
+21/6/2026, 11:35:32 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"601","timestamp":"2026-06-21T06:05:32.878Z"}
+21/6/2026, 11:35:33 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"601","amount":1160000,"actionAt":"2026-06-20 17:44:10","timestamp":"2026-06-21T06:05:33.000Z"}
+21/6/2026, 11:35:33 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"601","timestamp":"2026-06-21T06:05:33.207Z"}
+21/6/2026, 11:35:33 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"601","timestamp":"2026-06-21T06:05:33.208Z"}
+21/6/2026, 11:35:33 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"601","timestamp":"2026-06-21T06:05:33.216Z"}

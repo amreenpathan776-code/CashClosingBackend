@@ -1,0 +1,19 @@
+22/8/2026, 5:29:13 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"2580","deviceId":"81b65917c9367902","timestamp":"2026-08-21T23:59:13.439Z"}
+22/8/2026, 5:29:13 am | {"event":"LOGIN_REQUEST","mpin":"2580","deviceId":"81b65917c9367902","timestamp":"2026-08-21T23:59:13.440Z"}
+22/8/2026, 5:29:13 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"2580","timestamp":"2026-08-21T23:59:13.441Z"}
+22/8/2026, 5:29:13 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"974","branch":"Gopalapatnam","designation":"Branch Manager","timestamp":"2026-08-21T23:59:13.456Z"}
+22/8/2026, 5:29:13 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"974","savedDevice":"81b65917c9367902","currentDevice":"81b65917c9367902","timestamp":"2026-08-21T23:59:13.457Z"}
+22/8/2026, 5:29:13 am | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"974","branch":"Gopalapatnam","designation":"Branch Manager","loginTime":"2026-08-21T23:59:13.472Z"}
+22/8/2026, 5:29:14 am | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"974","timestamp":"2026-08-21T23:59:14.214Z"}
+22/8/2026, 5:29:14 am | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"974","timestamp":"2026-08-21T23:59:14.215Z"}
+22/8/2026, 5:29:14 am | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"974","employeeName":"T Sreenivas","branch":"Gopalapatnam","designation":"Branch Manager","timestamp":"2026-08-21T23:59:14.220Z"}
+22/8/2026, 5:29:14 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"974","timestamp":"2026-08-21T23:59:14.313Z"}
+22/8/2026, 5:29:14 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"974","timestamp":"2026-08-21T23:59:14.314Z"}
+22/8/2026, 5:29:14 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"974","amount":592329,"actionAt":"2026-08-21 17:43:08","timestamp":"2026-08-21T23:59:14.319Z"}
+22/8/2026, 5:29:14 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"974","timestamp":"2026-08-21T23:59:14.518Z"}
+22/8/2026, 5:29:14 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"974","timestamp":"2026-08-21T23:59:14.519Z"}
+22/8/2026, 5:29:14 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"974","timestamp":"2026-08-21T23:59:14.525Z"}
+22/8/2026, 3:11:38 pm | RAW REGISTER BODY: {"empNo":"00563","password":"1234","mpin":"4321","deviceId":"b033b989959e4569"}
+22/8/2026, 3:11:38 pm | {"api":"/register","event":"REGISTER_API_STARTED","empNo":"00563","deviceId":"b033b989959e4569","timestamp":"2026-08-22T09:41:38.240Z"}
+22/8/2026, 3:11:38 pm | {"event":"REGISTER_REQUEST","empNo":"00563","timestamp":"2026-08-22T09:41:38.241Z"}
+22/8/2026, 3:11:38 pm | {"event":"REGISTER_BLOCKED_NON_BM","empNo":"00563","branchCode":"51","designation":"csh","timestamp":"2026-08-22T09:41:38.251Z"}

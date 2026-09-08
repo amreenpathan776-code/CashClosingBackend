@@ -1,0 +1,60 @@
+28/5/2026, 3:18:36 pm | [2026-05-28T09:48:37.262Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-28T09:48:37.262Z"
+}
+28/5/2026, 3:18:36 pm | [2026-05-28T09:48:37.033Z] [LOG] Running "CashClosingApp"
+28/5/2026, 6:22:48 pm | [2026-05-28T12:52:48.740Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-28T12:52:48.740Z"
+}
+28/5/2026, 6:22:48 pm | [2026-05-28T12:52:48.623Z] [LOG] Running "CashClosingApp"
+28/5/2026, 10:22:00 pm | [2026-05-28T16:51:59.495Z] [LOG] Running "CashClosingApp"
+28/5/2026, 10:22:00 pm | [2026-05-28T16:51:59.664Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-28T16:51:59.664Z"
+}
+28/5/2026, 10:41:30 pm | [2026-05-28T17:11:29.088Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-28T17:11:29.088Z"
+}
+28/5/2026, 10:41:31 pm | [2026-05-28T17:11:28.165Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-28T17:11:28.165Z"
+}
+28/5/2026, 10:41:33 pm | [2026-05-28T17:11:29.123Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-28T17:11:29.123Z"
+}
+28/5/2026, 10:41:33 pm | [2026-05-28T17:11:33.807Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-05-28T17:11:33.807Z"
+}
+28/5/2026, 10:41:33 pm | [2026-05-28T17:11:33.804Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-05-28T17:11:33.804Z"
+}
+28/5/2026, 10:41:33 pm | [2026-05-28T17:11:33.831Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "e4d11680cf9c8959",
+  "timestamp": "2026-05-28T17:11:33.831Z"
+}
+28/5/2026, 10:41:33 pm | [2026-05-28T17:11:33.832Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "e4d11680cf9c8959",
+  "timestamp": "2026-05-28T17:11:33.832Z"
+}
+28/5/2026, 10:41:33 pm | [2026-05-28T17:11:33.831Z] [LOG] {
+  "empNo": "",
+  "deviceId": "e4d11680cf9c8959"
+}
+28/5/2026, 10:41:34 pm | [2026-05-28T17:11:27.884Z] [LOG] Running "CashClosingApp"

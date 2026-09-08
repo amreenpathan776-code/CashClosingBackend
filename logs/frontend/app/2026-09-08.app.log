@@ -1,0 +1,233 @@
+8/9/2026, 7:36:46 am | [2026-09-08T02:06:46.238Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T02:06:46.238Z"
+}
+8/9/2026, 7:36:46 am | [2026-09-08T02:06:46.107Z] [LOG] Running "CashClosingApp"
+8/9/2026, 7:36:46 am | [2026-09-08T02:06:46.957Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-09-08T02:06:46.957Z"
+}
+8/9/2026, 7:36:46 am | [2026-09-08T02:06:46.980Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T02:06:46.980Z"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.629Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-09-08T02:06:50.628Z"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.624Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-09-08T02:06:50.624Z"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.837Z] [ERROR] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_FAILED",
+  "error": {
+    "success": false,
+    "message": "Unauthorized device"
+  },
+  "timestamp": "2026-09-08T02:06:50.836Z"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.841Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-09-08T02:06:50.841Z"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.666Z] [LOG] {
+  "empNo": "",
+  "deviceId": "19f9c9be512579c7"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.667Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "19f9c9be512579c7",
+  "timestamp": "2026-09-08T02:06:50.667Z"
+}
+8/9/2026, 7:36:50 am | [2026-09-08T02:06:50.664Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "19f9c9be512579c7",
+  "timestamp": "2026-09-08T02:06:50.663Z"
+}
+8/9/2026, 9:00:32 am | [2026-09-08T03:30:33.687Z] [LOG] Running "CashClosingApp"
+8/9/2026, 9:00:32 am | [2026-09-08T03:30:33.799Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T03:30:33.799Z"
+}
+8/9/2026, 9:00:33 am | [2026-09-08T03:30:34.681Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-09-08T03:30:34.681Z"
+}
+8/9/2026, 9:00:33 am | [2026-09-08T03:30:34.711Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T03:30:34.711Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.691Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-09-08T03:30:38.690Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.692Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-09-08T03:30:38.692Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.815Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_SUCCESS",
+  "user": {
+    "empNo": "307",
+    "employeeName": "P.L. Manikanta",
+    "branchCode": "35",
+    "branchName": "Kolluru",
+    "designation": "Branch Manager"
+  },
+  "timestamp": "2026-09-08T03:30:38.815Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.828Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "USER_DATA_SAVED",
+  "timestamp": "2026-09-08T03:30:38.828Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.829Z] [LOG] {
+  "event": "NAVIGATING_TO_USER"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.703Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "f2b383b692d384f6",
+  "timestamp": "2026-09-08T03:30:38.703Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.703Z] [LOG] {
+  "empNo": "",
+  "deviceId": "f2b383b692d384f6"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.703Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "f2b383b692d384f6",
+  "timestamp": "2026-09-08T03:30:38.703Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.830Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-09-08T03:30:38.830Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.841Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "SCREEN_OPENED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-09-08T03:30:38.841Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.842Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOAD_EMPLOYEE_STARTED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-09-08T03:30:38.842Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.844Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOGGED_USER_FETCHED",
+  "hasUser": true,
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-09-08T03:30:38.844Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.845Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_API_STARTED",
+  "empNo": "307",
+  "timestamp": "2026-09-08T03:30:38.845Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:38.988Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "EMPLOYEE_DATA_LOADED",
+  "empNo": "307",
+  "branch": "Kolluru",
+  "designation": "Branch Manager",
+  "timestamp": "2026-09-08T03:30:38.988Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:39.067Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LAST_SUBMISSION_LOADED",
+  "previousDayAmount": 818463,
+  "previousDaySubmittedAt": "2026-09-07 17:51:06",
+  "formattedPreviousDayTime": "7/9/2026, 5:51 pm",
+  "empNo": "",
+  "timestamp": "2026-09-08T03:30:39.067Z"
+}
+8/9/2026, 9:00:37 am | [2026-09-08T03:30:39.127Z] [LOG] {
+  "screen": "UserDashboard",
+  "event": "LOADING_COMPLETED",
+  "empNo": "UNKNOWN",
+  "timestamp": "2026-09-08T03:30:39.127Z"
+}
+8/9/2026, 11:23:30 am | [2026-09-08T05:53:30.141Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T05:53:30.141Z"
+}
+8/9/2026, 11:23:30 am | [2026-09-08T05:53:30.008Z] [LOG] Running "CashClosingApp"
+8/9/2026, 11:23:31 am | [2026-09-08T05:53:31.362Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T05:53:31.362Z"
+}
+8/9/2026, 11:23:31 am | [2026-09-08T05:53:31.336Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-09-08T05:53:31.336Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:34.869Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_BUTTON_CLICKED",
+  "timestamp": "2026-09-08T05:53:34.869Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:34.870Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_STARTED",
+  "timestamp": "2026-09-08T05:53:34.870Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:35.042Z] [ERROR] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_FAILED",
+  "error": {
+    "success": false,
+    "message": "Unauthorized device"
+  },
+  "timestamp": "2026-09-08T05:53:35.042Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:35.046Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOADING_COMPLETED",
+  "timestamp": "2026-09-08T05:53:35.046Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:34.879Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "LOGIN_API_STARTED",
+  "deviceId": "19f9c9be512579c7",
+  "timestamp": "2026-09-08T05:53:34.879Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:34.878Z] [LOG] {
+  "screen": "LoginScreen",
+  "event": "DEVICE_ID_FETCHED",
+  "deviceId": "19f9c9be512579c7",
+  "timestamp": "2026-09-08T05:53:34.878Z"
+}
+8/9/2026, 11:23:34 am | [2026-09-08T05:53:34.879Z] [LOG] {
+  "empNo": "",
+  "deviceId": "19f9c9be512579c7"
+}
+8/9/2026, 11:52:55 am | [2026-09-08T06:22:56.504Z] [LOG] Running "CashClosingApp"
+8/9/2026, 11:52:55 am | [2026-09-08T06:22:56.830Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-09-08T06:22:56.830Z"
+}

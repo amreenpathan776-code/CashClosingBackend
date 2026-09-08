@@ -1,0 +1,15 @@
+4/9/2026, 11:09:23 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"4104","deviceId":"e4d11680cf9c8959","timestamp":"2026-09-04T05:39:23.693Z"}
+4/9/2026, 11:09:23 am | {"event":"LOGIN_REQUEST","mpin":"4104","deviceId":"e4d11680cf9c8959","timestamp":"2026-09-04T05:39:23.695Z"}
+4/9/2026, 11:09:23 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"4104","timestamp":"2026-09-04T05:39:23.696Z"}
+4/9/2026, 11:09:23 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"410","branch":"Takkellapadu","designation":"Branch Manager","timestamp":"2026-09-04T05:39:23.708Z"}
+4/9/2026, 11:09:23 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"410","savedDevice":"e4d11680cf9c8959","currentDevice":"e4d11680cf9c8959","timestamp":"2026-09-04T05:39:23.709Z"}
+4/9/2026, 11:09:23 am | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"410","branch":"Takkellapadu","designation":"Branch Manager","loginTime":"2026-09-04T05:39:23.719Z"}
+4/9/2026, 11:09:24 am | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"410","timestamp":"2026-09-04T05:39:24.042Z"}
+4/9/2026, 11:09:24 am | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"410","timestamp":"2026-09-04T05:39:24.043Z"}
+4/9/2026, 11:09:24 am | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"410","employeeName":"J N V Veera Babu","branch":"Takkellapadu","designation":"Branch Manager","timestamp":"2026-09-04T05:39:24.048Z"}
+4/9/2026, 11:09:24 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"410","timestamp":"2026-09-04T05:39:24.162Z"}
+4/9/2026, 11:09:24 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"410","timestamp":"2026-09-04T05:39:24.163Z"}
+4/9/2026, 11:09:24 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"410","amount":1140000,"actionAt":"2026-09-03 17:51:59","timestamp":"2026-09-04T05:39:24.169Z"}
+4/9/2026, 11:09:24 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"410","timestamp":"2026-09-04T05:39:24.382Z"}
+4/9/2026, 11:09:24 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"410","timestamp":"2026-09-04T05:39:24.383Z"}
+4/9/2026, 11:09:24 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"410","timestamp":"2026-09-04T05:39:24.389Z"}

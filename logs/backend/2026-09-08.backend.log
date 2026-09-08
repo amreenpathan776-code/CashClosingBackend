@@ -1,0 +1,27 @@
+8/9/2026, 7:36:50 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"7019","deviceId":"19f9c9be512579c7","timestamp":"2026-09-08T02:06:50.692Z"}
+8/9/2026, 7:36:50 am | {"event":"LOGIN_REQUEST","mpin":"7019","deviceId":"19f9c9be512579c7","timestamp":"2026-09-08T02:06:50.694Z"}
+8/9/2026, 7:36:50 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"7019","timestamp":"2026-09-08T02:06:50.695Z"}
+8/9/2026, 7:36:50 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"823","branch":"Rama Chandra Puram","designation":"Branch Manager","timestamp":"2026-09-08T02:06:50.711Z"}
+8/9/2026, 7:36:50 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"823","savedDevice":"0","currentDevice":"19f9c9be512579c7","timestamp":"2026-09-08T02:06:50.712Z"}
+8/9/2026, 7:36:50 am | {"api":"/login","event":"LOGIN_BLOCKED_DEVICE","empNo":"823","savedDevice":"0","currentDevice":"19f9c9be512579c7","timestamp":"2026-09-08T02:06:50.713Z"}
+8/9/2026, 9:00:37 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"1689","deviceId":"f2b383b692d384f6","timestamp":"2026-09-08T03:30:37.336Z"}
+8/9/2026, 9:00:37 am | {"event":"LOGIN_REQUEST","mpin":"1689","deviceId":"f2b383b692d384f6","timestamp":"2026-09-08T03:30:37.338Z"}
+8/9/2026, 9:00:37 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"1689","timestamp":"2026-09-08T03:30:37.338Z"}
+8/9/2026, 9:00:37 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"307","branch":"Kolluru","designation":"Branch Manager","timestamp":"2026-09-08T03:30:37.354Z"}
+8/9/2026, 9:00:37 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"307","savedDevice":"f2b383b692d384f6","currentDevice":"f2b383b692d384f6","timestamp":"2026-09-08T03:30:37.355Z"}
+8/9/2026, 9:00:37 am | {"api":"/login","event":"LOGIN_SUCCESS","empNo":"307","branch":"Kolluru","designation":"Branch Manager","loginTime":"2026-09-08T03:30:37.362Z"}
+8/9/2026, 9:00:37 am | {"api":"/employee/:empNo","event":"EMPLOYEE_API_STARTED","empNo":"307","timestamp":"2026-09-08T03:30:37.525Z"}
+8/9/2026, 9:00:37 am | {"api":"/employee/:empNo","event":"EMPLOYEE_DB_QUERY_STARTED","empNo":"307","timestamp":"2026-09-08T03:30:37.526Z"}
+8/9/2026, 9:00:37 am | {"api":"/employee/:empNo","event":"EMPLOYEE_FETCH_SUCCESS","empNo":"307","employeeName":"P.L. Manikanta","branch":"Kolluru","designation":"Branch Manager","timestamp":"2026-09-08T03:30:37.533Z"}
+8/9/2026, 9:00:37 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_API_STARTED","empNo":"307","timestamp":"2026-09-08T03:30:37.583Z"}
+8/9/2026, 9:00:37 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_DB_QUERY_STARTED","empNo":"307","timestamp":"2026-09-08T03:30:37.584Z"}
+8/9/2026, 9:00:37 am | {"api":"/last-submission/:empNo","event":"LAST_SUBMISSION_FETCH_SUCCESS","empNo":"307","amount":818463,"actionAt":"2026-09-07 17:51:06","timestamp":"2026-09-08T03:30:37.591Z"}
+8/9/2026, 9:00:37 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_API_STARTED","empNo":"307","timestamp":"2026-09-08T03:30:37.664Z"}
+8/9/2026, 9:00:37 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_DB_QUERY_STARTED","empNo":"307","timestamp":"2026-09-08T03:30:37.665Z"}
+8/9/2026, 9:00:37 am | {"api":"/today-cash/:empNo","event":"TODAY_CASH_NOT_FOUND","empNo":"307","timestamp":"2026-09-08T03:30:37.671Z"}
+8/9/2026, 11:23:34 am | {"api":"/login","event":"LOGIN_API_STARTED","mpin":"7019","deviceId":"19f9c9be512579c7","timestamp":"2026-09-08T05:53:34.598Z"}
+8/9/2026, 11:23:34 am | {"event":"LOGIN_REQUEST","mpin":"7019","deviceId":"19f9c9be512579c7","timestamp":"2026-09-08T05:53:34.599Z"}
+8/9/2026, 11:23:34 am | {"api":"/login","event":"LOGIN_DB_QUERY_STARTED","mpin":"7019","timestamp":"2026-09-08T05:53:34.600Z"}
+8/9/2026, 11:23:34 am | {"api":"/login","event":"LOGIN_USER_FOUND","empNo":"823","branch":"Rama Chandra Puram","designation":"Branch Manager","timestamp":"2026-09-08T05:53:34.613Z"}
+8/9/2026, 11:23:34 am | {"api":"/login","event":"LOGIN_DEVICE_CHECK","empNo":"823","savedDevice":"0","currentDevice":"19f9c9be512579c7","timestamp":"2026-09-08T05:53:34.614Z"}
+8/9/2026, 11:23:34 am | {"api":"/login","event":"LOGIN_BLOCKED_DEVICE","empNo":"823","savedDevice":"0","currentDevice":"19f9c9be512579c7","timestamp":"2026-09-08T05:53:34.615Z"}

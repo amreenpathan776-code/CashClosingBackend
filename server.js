@@ -4,6 +4,15 @@ const express = require("express");
 const cors = require("cors");
 const sql = require("mssql");
 const ExcelJS = require("exceljs");
+const multer = require("multer");
+const XLSX = require("xlsx");
+
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fileSize: 10 * 1024 * 1024
+  }
+});
 
 const app = express();
 
@@ -3381,7 +3390,7 @@ FROM employees_master
 
 WHERE [Branch Name] IS NOT NULL
 
-AND LTRIM(RTRIM([Branch Name])) NOT IN ('Corporate Office', 'CO', 'Nidadavolu')
+AND LTRIM(RTRIM([Branch Name])) NOT IN ('Corporate Office', 'CO')
 
 ORDER BY branchName
 
@@ -3914,6 +3923,614 @@ worksheet.getRow(totalRowNumber).alignment = {
 });
 
 
+// ===========================
+// Branch Manager Data
+// ===========================
+
+
+app.post("/api/branch-users", async (req, res) => {
+  try {
+
+    const { branchName } = req.body;
+
+    const pool = await sql.connect(dbConfig);
+
+    const result = await pool.request()
+      .input("branchName", sql.VarChar, branchName)
+      .query(`
+        SELECT
+          [Employee Name] AS employeeName,
+          [Designation] AS designation,
+          [Contact Number] AS contactNumber
+        FROM [CashClosing].[dbo].[employees_master]
+        WHERE [Branch Name] = @branchName
+        ORDER BY [Employee Name]
+      `);
+
+    res.json(result.recordset);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: "Failed to fetch branch users"
+    });
+
+  }
+});
+
+
+app.post("/api/branch-manager-master", async (req, res) => {
+  try {
+
+    const { userId, cluster, branch } = req.body;
+
+    const pool = await sql.connect(dbConfig);
+
+    let query = `
+  SELECT
+    [Emp no] AS empId,
+    [Employee Name] AS employeeName,
+    [Br Code] AS branchCode,
+    [Branch Name] AS branchName,
+    [Designation] AS designation,
+    [Contact Number] AS contactNumber,
+    [Cluster] AS cluster
+  FROM employees_master
+  WHERE 1 = 1
+`;
+
+// Initial load -> only Branch Managers
+if (!userId && !branch) {
+
+  query += ` AND Designation = 'Branch Manager'`;
+
+}
+
+// Employee ID search -> all designations
+if (userId) {
+
+  query += ` AND [Emp no] LIKE '%${userId}%'`;
+
+}
+
+if (cluster) {
+  query += ` AND [Cluster] = '${cluster}'`;
+}
+
+if (branch) {
+  query += ` AND [Branch Name] = '${branch}'`;
+}
+
+query += `
+  ORDER BY CAST([Br Code] AS INT)
+`;
+
+    const result = await pool.request().query(query);
+
+    const clusterResult = await pool.request().query(`
+      SELECT DISTINCT [Cluster]
+      FROM employees_master
+      ORDER BY [Cluster]
+    `);
+
+    const branchResult = await pool.request().query(`
+  SELECT
+    [Cluster] AS cluster,
+    [Br Code] AS branchCode,
+    [Branch Name] AS branchName
+  FROM employees_master
+  WHERE [Branch Name] IS NOT NULL
+  GROUP BY
+    [Cluster],
+    [Br Code],
+    [Branch Name]
+  ORDER BY
+    TRY_CAST([Br Code] AS INT)
+`);
+
+    res.json({
+      tableData: result.recordset,
+      clusters: clusterResult.recordset.map(x => x.Cluster),
+      branches: branchResult.recordset
+    });
+
+  } catch (err) {
+
+    console.error(err);
+
+    res.status(500).json({
+      error: err.message
+    });
+
+  }
+});
+
+
+app.post("/api/branch-manager-master/save", async (req, res) => {
+  try {
+
+    const {
+      empId,
+      empName,
+      cluster,
+      branchCode,
+      branchName,
+      designation,
+      mobileNumber
+    } = req.body;
+
+    const pool = await sql.connect(dbConfig);
+
+    // Check Duplicate Employee
+
+    const existingUser = await pool.request()
+  .input("empId", sql.VarChar(50), empId)
+  .query(`
+    SELECT *
+    FROM employees_master
+    WHERE [Emp no] = @empId
+  `);
+  
+  
+  if (existingUser.recordset.length > 0) {
+
+  await pool.request()
+    .input("empId", sql.VarChar(50), empId)
+    .input("empName", sql.VarChar(200), empName)
+    .input("branchCode", sql.VarChar(50), branchCode)
+    .input("branchName", sql.VarChar(200), branchName)
+    .input("designation", sql.VarChar(100), designation)
+    .input("mobileNumber", sql.VarChar(20), mobileNumber)
+    .input("cluster", sql.VarChar(100), cluster)
+    .query(`
+      UPDATE employees_master
+      SET
+        [Employee Name] = @empName,
+        [Br Code] = @branchCode,
+        [Branch Name] = @branchName,
+        [Designation] = @designation,
+        [Contact Number] = @mobileNumber,
+        [Cluster] = @cluster
+      WHERE [Emp no] = @empId
+    `);
+
+  return res.json({
+    success: true,
+    message: "User Updated Successfully"
+  });
+
+}
+
+else {
+
+    await pool.request()
+      .input("empId", sql.VarChar, empId)
+      .input("empName", sql.VarChar, empName)
+      .input("branchCode", sql.VarChar, branchCode)
+      .input("branchName", sql.VarChar, branchName)
+      .input("designation", sql.VarChar, designation)
+      .input("mobileNumber", sql.VarChar, mobileNumber)
+      .input("cluster", sql.VarChar, cluster)
+      .query(`
+        INSERT INTO employees_master
+        (
+          [Emp no],
+          [Employee Name],
+          [Br Code],
+          [Branch Name],
+          [Designation],
+          [Contact Number],
+          [Cluster]
+        )
+        VALUES
+        (
+          @empId,
+          @empName,
+          @branchCode,
+          @branchName,
+          @designation,
+          @mobileNumber,
+          @cluster
+        )
+      `);
+
+    res.json({
+      success: true,
+      message: "User Added Successfully"
+    });
+	}
+
+  } catch (err) {
+
+    console.error(err);
+
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
+
+  }
+});
+
+
+app.post("/api/branch-manager-master/update", async (req, res) => {
+  try {
+
+    const {
+      empId,
+      empName,
+      cluster,
+      branchCode,
+      branchName,
+      designation,
+      mobileNumber
+    } = req.body;
+
+    const pool = await sql.connect(dbConfig);
+
+    await pool.request()
+      .input("empId", sql.VarChar, empId)
+      .input("empName", sql.VarChar, empName)
+      .input("branchCode", sql.VarChar, branchCode)
+      .input("branchName", sql.VarChar, branchName)
+      .input("designation", sql.VarChar, designation)
+      .input("mobileNumber", sql.VarChar, mobileNumber)
+      .input("cluster", sql.VarChar, cluster)
+      .query(`
+        UPDATE employees_master
+        SET
+          [Employee Name] = @empName,
+          [Br Code] = @branchCode,
+          [Branch Name] = @branchName,
+          [Designation] = @designation,
+          [Contact Number] = @mobileNumber,
+          [Cluster] = @cluster
+        WHERE [Emp no] = @empId
+      `);
+
+    res.json({
+      success: true,
+      message: "Updated Successfully"
+    });
+
+  } catch (err) {
+
+    console.error(err);
+
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
+
+  }
+});
+
+
+app.post(
+  "/api/branch-manager-master/delete",
+  async (req, res) => {
+
+    try {
+
+      const { empId } = req.body;
+
+      const pool =
+        await sql.connect(dbConfig);
+
+      const result =
+        await pool.request()
+          .input(
+            "empId",
+            sql.VarChar(50),
+            empId
+          )
+          .query(`
+            DELETE
+            FROM employees_master
+            WHERE [Emp no] = @empId
+          `);
+
+      res.json({
+        success: true,
+        message:
+          "User Deleted Successfully"
+      });
+
+    } catch (err) {
+
+      console.error(err);
+
+      res.status(500).json({
+        success: false,
+        message: err.message
+      });
+
+    }
+
+  }
+);
+
+
+// ===========================
+// Data Upload
+// ===========================
+
+app.post(
+  "/api/branch-manager-master/upload",
+  upload.single("file"),
+  async (req, res) => {
+
+    try {
+
+      if (!req.file) {
+        return res.status(400).json({
+          success: false,
+          message: "Please select a file"
+        });
+      }
+
+      const workbook = XLSX.read(
+        req.file.buffer,
+        { type: "buffer" }
+      );
+
+      const sheet =
+        workbook.Sheets[
+          workbook.SheetNames[0]
+        ];
+
+      const jsonData =
+        XLSX.utils.sheet_to_json(sheet);
+
+      if (jsonData.length === 0) {
+        return res.status(400).json({
+          success: false,
+          message: "Excel file is empty"
+        });
+      }
+
+      // ===========================
+      // COLUMN VALIDATION
+      // ===========================
+
+      const excelColumns =
+  Object.keys(jsonData[0]).map(col =>
+    col
+      .replace(/\n/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
+
+      const requiredColumns = [
+        "Emp no",
+        "Employee Name",
+        "Br Code",
+        "Branch Name",
+        "Designation",
+        "Contact Number",
+        "Cluster"
+      ];
+
+      const missingColumns =
+        requiredColumns.filter(
+          column =>
+            !excelColumns.includes(column)
+        );
+
+      if (missingColumns.length > 0) {
+
+        return res.status(400).json({
+          success: false,
+          message:
+            "Missing Columns : " +
+            missingColumns.join(", ")
+        });
+
+      }
+
+     const pool =
+  await sql.connect(dbConfig);
+
+// ===========================
+// DELETE OLD DATA
+// ===========================
+
+console.log("DELETE STARTED");
+
+const deleteResult =
+  await pool.request().query(`
+    DELETE FROM employees_master
+  `);
+
+console.log("DELETE COMPLETED");
+
+const countAfterDelete =
+  await pool.request().query(`
+    SELECT COUNT(*) AS total
+    FROM employees_master
+  `);
+
+console.log(
+  "COUNT AFTER DELETE =",
+  countAfterDelete.recordset[0].total
+);
+
+let insertedCount = 0;
+
+      // ===========================
+      // INSERT NEW DATA
+      // ===========================
+
+      for (const row of jsonData) {
+
+  const cleanRow = {};
+
+  Object.keys(row).forEach(key => {
+
+    const cleanKey = key
+      .replace(/\n/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    cleanRow[cleanKey] = row[key];
+
+  });
+
+  const empId =
+    String(
+      cleanRow["Emp no"] || ""
+    ).trim();
+
+  if (!empId) continue;
+
+  const empName =
+    String(
+      cleanRow["Employee Name"] || ""
+    ).trim();
+
+  const branchCode =
+    String(
+      cleanRow["Br Code"] || ""
+    ).trim();
+
+  const branchName =
+    String(
+      cleanRow["Branch Name"] || ""
+    ).trim();
+
+  const designation =
+    String(
+      cleanRow["Designation"] || ""
+    ).trim();
+
+  let contactNumber =
+  String(
+    cleanRow["Contact Number"] || ""
+  )
+    .replace(/\s+/g, "")
+    .replace(/[-()+]/g, "")
+    .trim();
+
+// Remove country code 91 if present
+if (
+  contactNumber.length > 10 &&
+  contactNumber.startsWith("91")
+) {
+  contactNumber = contactNumber.substring(2);
+}
+
+  let cluster =
+  String(
+    cleanRow["Cluster"] || ""
+  )
+  .trim()
+  .replace(/\s+/g, "")
+  .toUpperCase();
+
+const clusterMap = {
+  K: "Krishna",
+  G: "Guntur",
+  V: "Visakhapatnam",
+  W: "West Godavari",
+  WG: "West Godavari"
+};
+
+cluster =
+  clusterMap[cluster] || cluster;
+
+        await pool.request()
+
+          .input(
+            "empId",
+            sql.VarChar(50),
+            empId
+          )
+
+          .input(
+            "empName",
+            sql.VarChar(200),
+            empName
+          )
+
+          .input(
+            "branchCode",
+            sql.VarChar(50),
+            branchCode
+          )
+
+          .input(
+            "branchName",
+            sql.VarChar(200),
+            branchName
+          )
+
+          .input(
+            "designation",
+            sql.VarChar(100),
+            designation
+          )
+
+          .input(
+            "contactNumber",
+            sql.VarChar(20),
+            contactNumber
+          )
+
+          .input(
+            "cluster",
+            sql.VarChar(100),
+            cluster
+          )
+
+          .query(`
+            INSERT INTO employees_master
+            (
+              [Emp no],
+              [Employee Name],
+              [Br Code],
+              [Branch Name],
+              [Designation],
+              [Contact Number],
+              [Cluster]
+            )
+            VALUES
+            (
+              @empId,
+              @empName,
+              @branchCode,
+              @branchName,
+              @designation,
+              @contactNumber,
+              @cluster
+            )
+          `);
+
+        insertedCount++;
+
+      }
+
+      res.json({
+        success: true,
+        message:
+          "File Uploaded Successfully",
+        insertedCount
+      });
+
+    } catch (err) {
+
+      console.error(err);
+
+      res.status(500).json({
+        success: false,
+        message: err.message
+      });
+
+    }
+
+  }
+);
 
 // ======================
 // FRONTEND LOG API

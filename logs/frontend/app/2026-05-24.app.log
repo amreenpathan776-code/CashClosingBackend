@@ -1,0 +1,12 @@
+24/5/2026, 8:51:35 am | [2026-05-24T03:21:35.698Z] [LOG] Running "CashClosingApp"
+24/5/2026, 8:51:35 am | [2026-05-24T03:21:35.843Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-24T03:21:35.842Z"
+}
+24/5/2026, 1:05:12 pm | [2026-05-24T07:35:12.751Z] [LOG] {
+  "screen": "WelcomeScreen",
+  "event": "SCREEN_OPENED",
+  "timestamp": "2026-05-24T07:35:12.751Z"
+}
+24/5/2026, 1:05:12 pm | [2026-05-24T07:35:12.617Z] [LOG] Running "CashClosingApp"
